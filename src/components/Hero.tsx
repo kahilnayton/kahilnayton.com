@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
 import HeroImage from "images/sketch.jpg";
-import Image from "next/image";
 import dimensions from "styles/dimensions";
 import heroImage from "images/sketch.jpg";
 import { headerHeightMobile, z } from "styles/constants";

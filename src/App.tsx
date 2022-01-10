@@ -1,25 +1,23 @@
-import { useState } from 'react';
-import SEO from 'components/SEO';
-import SubNav from 'components/sections/SubNav';
-import Hero from 'components/Hero';
-import TwoColumns from 'components/sections/TwoColumn';
-import { data, links } from 'lib';
-import Footer from 'components/Footer';
-import { ThemeProvider } from 'styled-components';
-import Typography from 'styles/Typography';
-import { darkTheme, GlobalStyles, lightTheme } from 'styles/ThemeProvider';
+import { useState } from "react";
+import SubNav from "components/sections/SubNav";
+import Hero from "components/Hero";
+import TwoColumns from "components/sections/TwoColumn";
+import { data, links } from "lib";
+import Footer from "components/Footer";
+import { ThemeProvider } from "styled-components";
+import Typography from "styles/Typography";
+import { darkTheme, GlobalStyles, lightTheme } from "styles/ThemeProvider";
 
 const App = () => {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState("light");
 
   const toggleTheme = () => {
-    theme == 'light' ? setTheme('dark') : setTheme('light');
+    theme == "light" ? setTheme("dark") : setTheme("light");
   };
   return (
-    <ThemeProvider theme={theme == 'light' ? lightTheme : darkTheme}>
+    <ThemeProvider theme={theme == "light" ? lightTheme : darkTheme}>
       <Typography />
       <GlobalStyles />
-      <SEO />
       <Hero />
       <SubNav links={links} />
 
