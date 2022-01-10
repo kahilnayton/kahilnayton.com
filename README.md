@@ -5,6 +5,8 @@ Choro (pronounced SHOH-roh) is best described in American terms as "the New Orle
 **new music**
 Just released some new tunes. It 2021 was a year of lots of transition and writing some new music felt like the best way to get through the whirlwind of change and life upheaval. You can check it out on Spotify.
 
+
+
 **NFT**
 I'm a bit of a crypto nerd and though it would be fun to tokanize this new release, so if you want to buy some non fudgable tokens or if you are interested in the crypto space. I feel like the way streaming is currently set up musos kinda get a rough deal and although it's early days maybe block chain tech can help empower creatives in the future. Happy to chat about the process if you're interested to learn!
 
