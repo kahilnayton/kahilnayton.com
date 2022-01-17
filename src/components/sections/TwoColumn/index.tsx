@@ -1,5 +1,11 @@
-import { Column, Container, Inner, VStack } from 'styles/structure';
-import { ElevatedBox, ElevationWrapper } from 'styles/elevation';
+import {
+  Column,
+  Container,
+  ImageContainer,
+  Inner,
+  VStack,
+} from "styles/structure";
+import { ElevatedBox, ElevationWrapper } from "styles/elevation";
 
 interface TwoColumnProps {
   reverse?: boolean;
@@ -26,10 +32,12 @@ export default function TwoColumns({
         <ElevatedBox>
           <Container reverse={reverse}>
             <Column>
-              <img
-                alt="section"
-                src={imageSrc || '/public/image/kahil-guitar.jpg'}
-              />
+              <ImageContainer>
+                <img
+                  alt="section"
+                  src={imageSrc || "/public/image/kahil-guitar.jpg"}
+                />
+              </ImageContainer>
             </Column>
             <Column>
               <h1>{title}</h1>

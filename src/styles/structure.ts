@@ -41,11 +41,19 @@ export const Container = styled.div<{ reverse: boolean }>`
   }
 `;
 
-export const Column = styled.div`
+export const ImageContainer = styled.div`
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+`;
+
+export const Column = styled.div<{ image?: boolean }>`
   flex: 1;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: ${(p) => (p.image ? "center" : "column")};
   align-items: start;
   margin: auto;
 `;
