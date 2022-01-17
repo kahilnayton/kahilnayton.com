@@ -1,8 +1,20 @@
 {
+  "presets": [
+    "@babel/preset-typescript", // <---
+    [
+      "next/babel",
+      {
+        "preset-env": {
+          "modules": "commonjs"
+        }
+      }
+    ]
+  ],
   "plugins": [
     [
-      "babel-plugin-styled-components",
+      "styled-components",
       {
+        "ssr": true,
         "displayName": true
       }
     ]
