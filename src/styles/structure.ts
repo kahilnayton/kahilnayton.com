@@ -42,10 +42,14 @@ export const Container = styled.div<{ reverse: boolean }>`
 `;
 
 export const ImageContainer = styled.div`
-  img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  @media (min-width: ${dimensions.tablet}px) {
+    height: 40rem;
+    width: 40rem;
   }
 `;
 
@@ -108,4 +112,9 @@ export const VStack = styled.div<{ spacingTop: number }>`
   display: flex;
   flex-direction: column;
   padding-top: ${({ spacingTop }) => spacingTop}rem;
+`;
+
+export const FooterImage = styled.div`
+  height: 10rem;
+  width: 10rem;
 `;

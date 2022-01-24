@@ -1,6 +1,7 @@
 import React from "react";
 import {
   FooterContainer,
+  FooterImage,
   Inner,
   LottieContainer,
   VStack,
@@ -13,6 +14,7 @@ import { styled } from "@mui/material/styles";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import { LinkType } from "lib";
+import { ObjectFitImage } from "components/Hero";
 
 interface FooterProps {
   toggleTheme: () => void;
@@ -94,6 +96,9 @@ export default function Footer({ toggleTheme, theme, links }: FooterProps) {
             />
           </FormGroup>
         </VStack>
+        <FooterImage>
+          <ObjectFitImage src="/images/final-color-02-cutout.png" alt="" />
+        </FooterImage>
       </FooterContainer>
     </Inner>
   );

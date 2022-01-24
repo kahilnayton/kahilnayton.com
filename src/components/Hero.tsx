@@ -6,7 +6,7 @@ import { headerHeightMobile, z } from "styles/constants";
 const Hero = () => {
   return (
     <HeroContainer>
-      <img src="/images/sketch.jpg" alt="hero" />
+      <ObjectFitImage src="/images/final-color-02-layers.jpg" alt="hero" />
     </HeroContainer>
   );
 };
@@ -14,15 +14,22 @@ const Hero = () => {
 export default Hero;
 
 const HeroContainer = styled.div`
-  margin-top: ${headerHeightMobile};
-
-  img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-  }
+  padding-top: ${headerHeightMobile};
+  height: 50rem;
 
   @media (min-width: ${dimensions.tablet}px) {
-    margin-top: 0rem;
+    height: 60rem;
+    padding-top: 0rem;
+  }
+`;
+
+export const ObjectFitImage = styled.img`
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+
+  @media (min-width: ${dimensions.tablet}px) {
+    object-position: left top;
   }
 `;

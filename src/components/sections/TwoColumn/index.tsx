@@ -6,6 +6,7 @@ import {
   VStack,
 } from "styles/structure";
 import { ElevatedBox, ElevationWrapper } from "styles/elevation";
+import { ObjectFitImage } from "components/Hero";
 
 interface TwoColumnProps {
   reverse?: boolean;
@@ -31,9 +32,9 @@ export default function TwoColumns({
       <ElevationWrapper>
         <ElevatedBox>
           <Container reverse={reverse}>
-            <Column>
+            <Column image={true}>
               <ImageContainer>
-                <img
+                <ObjectFitImage
                   alt="section"
                   src={imageSrc || "/public/image/kahil-guitar.jpg"}
                 />

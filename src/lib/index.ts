@@ -44,7 +44,7 @@ export const data = {
   newmusic: {
     id: "newmusic",
     title: "New Music",
-    image: "/images/final-color.jpg",
+    image: "/images/sketch.jpg",
     description:
       "Just about to release some new tunes! 2021 was a year of lots of transition and turbulence so writing some new music felt like the best way to get through the whirlwind of change and life upheaval. New music will drop in about a month!",
     link: SPOTIFY_URL,

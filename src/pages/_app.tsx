@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ThemeProvider } from "styled-components";
+import Head from "next/head";
 
 import ResetStyles from "../styles/reset";
 import { lightTheme, darkTheme, GlobalStyles } from "../styles/ThemeProvider";
@@ -23,6 +24,9 @@ export default function App({ Component, pageProps }: AppProps) {
   };
   return (
     <>
+      <Head>
+        <link rel="shortcut icon" href="/images/final-color-02-cutout.png" />
+      </Head>
       <ResetStyles />
       <ThemeProvider theme={theme == "light" ? lightTheme : darkTheme}>
         <Typography />
