@@ -1,12 +1,11 @@
 import styled from "styled-components";
+import { headerHeightMobile } from "styles/constants";
 import dimensions from "styles/dimensions";
-import heroImage from "images/sketch.jpg";
-import { headerHeightMobile, z } from "styles/constants";
 
 const Hero = () => {
   return (
     <HeroContainer>
-      <ObjectFitImage src="/images/final-color-02-layers.jpg" alt="hero" />
+      {/* <ObjectFitImage src="/images/final-color-02-layers.jpg" alt="hero" /> */}
     </HeroContainer>
   );
 };

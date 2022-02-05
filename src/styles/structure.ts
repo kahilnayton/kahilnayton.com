@@ -48,8 +48,8 @@ export const ImageContainer = styled.div`
   width: 100%;
   height: 100%;
   @media (min-width: ${dimensions.tablet}px) {
-    height: 40rem;
-    width: 40rem;
+    min-height: 40rem;
+    min-width: 40rem;
   }
 `;
 
