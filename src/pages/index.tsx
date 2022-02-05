@@ -1,5 +1,5 @@
-import SubNav from "components/sections/SubNav";
 import Hero from "components/Hero";
+import SubNav from "components/sections/SubNav";
 import TwoColumns from "components/sections/TwoColumn";
 import { data, links } from "lib";
 
