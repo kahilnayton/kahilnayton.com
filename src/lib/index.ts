@@ -82,7 +82,7 @@ export const data = {
   bandcamp: {
     id: "bandcamp",
     title: "Bandcamp",
-    imageSrc: "/images/flowers.png",
+    imageSrc: "/images/SVG/flowers.svg",
     description: `Bandcamp is a great way to show some support, not just for this music, but for all musicians. Spitify pays bugger all to artists so if you like someone's music go buy it on Bandcamp. Some of the guys who played on these tracks have some particularly good stuff.`,
     link: BANDCAMP_URL,
     linkLable: "Head to bandcamp",

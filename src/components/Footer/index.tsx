@@ -97,7 +97,7 @@ export default function Footer({ toggleTheme, theme, links }: FooterProps) {
           </FormGroup>
         </VStack>
         <FooterImage>
-          <ObjectFitImage src="/images/final-color-02-cutout.png" alt="" />
+          <ObjectFitImage src="/images/SVG/logo.svg" alt="" />
         </FooterImage>
       </FooterContainer>
     </Inner>
