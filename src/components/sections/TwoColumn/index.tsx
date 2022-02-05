@@ -1,10 +1,10 @@
-import { ObjectFitImage } from "components/Hero";
+import Image from "next/image";
 import Fade from "react-reveal/Fade";
 import { ElevatedBox, ElevationWrapper } from "styles/elevation";
 import {
+  CardImageContainer,
   Column,
   Container,
-  ImageContainer,
   Inner,
   VStack,
 } from "styles/structure";
@@ -35,12 +35,14 @@ export default function TwoColumns({
           <ElevatedBox>
             <Container reverse={reverse}>
               <Column image={true}>
-                <ImageContainer>
-                  <ObjectFitImage
-                    alt="section"
+                <CardImageContainer>
+                  <Image
+                    layout="fill"
+                    objectFit="cover"
                     src={imageSrc || "/public/image/kahil-guitar.jpg"}
+                    alt="hero"
                   />
-                </ImageContainer>
+                </CardImageContainer>
               </Column>
               <Column>
                 <h1>{title}</h1>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styled from "styled-components";
 import { headerHeightMobile } from "styles/constants";
 import dimensions from "styles/dimensions";
@@ -5,7 +6,12 @@ import dimensions from "styles/dimensions";
 const Hero = () => {
   return (
     <HeroContainer>
-      {/* <ObjectFitImage src="/images/final-color-02-layers.jpg" alt="hero" /> */}
+      <Image
+        layout="fill"
+        objectFit="cover"
+        src="/images/final-color-02-layers.jpg"
+        alt="hero"
+      />
     </HeroContainer>
   );
 };
@@ -14,10 +20,11 @@ export default Hero;
 
 const HeroContainer = styled.div`
   padding-top: ${headerHeightMobile};
-  height: 50rem;
+  height: 500px;
+  position: relative;
 
   @media (min-width: ${dimensions.tablet}px) {
-    height: 60rem;
+    height: 600px;
     padding-top: 0rem;
   }
 `;

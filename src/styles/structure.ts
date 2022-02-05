@@ -41,6 +41,15 @@ export const Container = styled.div<{ reverse: boolean }>`
   }
 `;
 
+export const CardImageContainer = styled.div`
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -48,8 +57,8 @@ export const ImageContainer = styled.div`
   width: 100%;
   height: 100%;
   @media (min-width: ${dimensions.tablet}px) {
-    min-height: 40rem;
-    min-width: 40rem;
+    min-height: 400px;
+    min-width: 400px;
   }
 `;
 
@@ -60,6 +69,9 @@ export const Column = styled.div<{ image?: boolean }>`
   flex-direction: ${(p) => (p.image ? "center" : "column")};
   align-items: start;
   margin: auto;
+  @media (min-width: ${dimensions.tablet}px) {
+    /* display: contents; */
+  }
 `;
 
 export const LottieContainer = styled.div`
