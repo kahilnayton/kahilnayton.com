@@ -44,7 +44,7 @@ export const data = {
   newmusic: {
     id: "newmusic",
     title: "New Music",
-    imageSrc: "/images/sketch.jpg",
+    imageSrc: "/images/SVG/sketch-01.svg",
     description:
       "Just about to release some new tunes! 2021 was a year of lots of transition and turbulence so writing some new music felt like the best way to get through the whirlwind of change and life upheaval. New music will drop in about a month!",
     link: SPOTIFY_URL,
@@ -54,7 +54,7 @@ export const data = {
   choro: {
     id: "choro",
     title: "Choro",
-    imageSrc: "/images/beco.jpeg",
+    imageSrc: "/images/SVG/choro.svg",
     description:
       'Choro (pronounced SHOH-roh) is best described in American terms as "the New Orleans jazz of Brazil." It is a complex popular musical form based on improvisation, and like New Orleans jazz, blues, or ragtime, grew from a formalized musical structure and many worldly influences. But to the people of South America, choro is Brazil. It is life. Our band Regional De NY often plays around NYC, come hang!',
     link: REGIONAL_URL,
@@ -64,7 +64,7 @@ export const data = {
   nft: {
     id: "nft",
     title: "NFT",
-    imageSrc: "/images/nft.jpeg",
+    imageSrc: "/images/SVG/nft.svg",
     description: `I'm a bit of a crypto nerd and thought it would be fun to tokenize this new release, so if you want to buy some non fungible tokens or if you are interested in the crypto space. I feel like the way streaming is currently set up musos kinda get a rough deal and although it's early days maybe block chain tech can help empower creatives in the future. Happy to chat about the process if you're interested to learn!`,
     link: NFT_URL,
     linkLable: `Learn about NFT's`,
@@ -73,7 +73,7 @@ export const data = {
   video: {
     id: "video",
     title: "New Video",
-    imageSrc: "/images/vid_preview.jpg",
+    imageSrc: "/images/SVG/vid_preview.svg",
     description: `Some time ago now, a good mate had an idea for a music clip for one of my songs. The subsequent events that grew out of this idea ended up being quite unexpected… I'll write some more words about it as we finish up because it’s gonna be a tight clip and deserves a place in the world.`,
     link: YOUTUBE_URL,
     linkLable: "Check out some other vids",
