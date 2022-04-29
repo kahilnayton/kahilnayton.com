@@ -2,8 +2,7 @@
 **choro**
 Choro (pronounced SHOH-roh) is best described in American terms as "the New Orleans jazz of Brazil." It is a complex popular musical form based on improvisation, and like New Orleans jazz, blues, or ragtime, grew from a formalized musical structure and many worldly influences. But to the people of South America, choro is Brazil. It is life. Our band Regional De NY often plays around NYC, come hang!
 
-**new music**
-Just released some new tunes. It 2021 was a year of lots of transition and writing some new music felt like the best way to get through the whirlwind of change and life upheaval. You can check it out on Spotify.
+
 
 
 
