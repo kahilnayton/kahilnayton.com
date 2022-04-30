@@ -1,7 +1,7 @@
-import { Inner } from 'styles/structure';
+import { Inner } from 'styles/structure'
 
-interface GigsProps {
-  id?: string;
+type GigsProps = {
+  id?: string
 }
 
 export default function Gigs({ id }: GigsProps) {
@@ -9,5 +9,5 @@ export default function Gigs({ id }: GigsProps) {
     <Inner id={id}>
       <h1>Gigs</h1>
     </Inner>
-  );
+  )
 }

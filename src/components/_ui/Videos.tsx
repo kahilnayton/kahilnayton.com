@@ -1,6 +1,6 @@
-import React from 'react';
-import Layout from '../layouts/Layout';
-import styled from 'styled-components';
+import React from 'react'
+import Layout from '@/components/layouts/Layout'
+import styled from 'styled-components'
 
 export default function Videos() {
   return (
@@ -14,7 +14,7 @@ export default function Videos() {
         />
       </ResponsiveContainer>
     </Layout>
-  );
+  )
 }
 
 const ResponsiveContainer = styled.div`
@@ -22,7 +22,7 @@ const ResponsiveContainer = styled.div`
   overflow: hidden;
   padding-top: 56.25%;
   margin-top: 4rem;
-`;
+`
 
 const Iframe = styled.iframe`
   position: absolute;
@@ -31,4 +31,4 @@ const Iframe = styled.iframe`
   width: 100%;
   height: 100%;
   border: 0;
-`;
+`

@@ -1,21 +1,21 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React, { useState } from 'react'
+import styled from 'styled-components'
 // @ts-ignore
-import { document } from 'browser-monads';
+import { document } from 'browser-monads'
 
-import { Inner } from 'styles/structure';
-import dimensions from 'styles/dimensions';
-import { links } from 'lib';
-import { headerHeightMobile, z } from 'styles/constants';
+import { Inner } from 'styles/structure'
+import dimensions from 'styles/dimensions'
+import { links } from 'lib'
+import { headerHeightMobile, z } from 'styles/constants'
 
 export default function Hamburger() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const toggleMobile = () => {
-    const bodyClasses = document.getElementsByTagName('body')[0].classList;
-    bodyClasses.toggle('is-locked');
-    setIsOpen(!isOpen);
-  };
+    const bodyClasses = document.getElementsByTagName('body')[0].classList
+    bodyClasses.toggle('is-locked')
+    setIsOpen(!isOpen)
+  }
 
   return (
     <HeaderContainer className={`${isOpen ? 'is-open' : ''}`}>
@@ -45,7 +45,7 @@ export default function Hamburger() {
         </MobileLinks>
       </HeaderMobile>
     </HeaderContainer>
-  );
+  )
 }
 
 const HeaderContainer = styled.div`
@@ -60,7 +60,7 @@ const HeaderContainer = styled.div`
     display: none;
     right: 3.5rem;
   }
-`;
+`
 
 const HeaderHamburger = styled.input`
   display: block;
@@ -119,7 +119,7 @@ const HeaderHamburger = styled.input`
   @media (min-width: ${dimensions.desktop}px) {
     display: none;
   }
-`;
+`
 
 const HeaderMobile = styled.div`
   display: flex;
@@ -142,13 +142,13 @@ const HeaderMobile = styled.div`
   @media (min-width: ${dimensions.tablet}px) {
     display: none;
   }
-`;
+`
 
 const MobileLinks = styled.ul`
   height: 100%;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-`;
+`
 
 const MobileToggle = styled.div`
   position: relative;
@@ -159,7 +159,7 @@ const MobileToggle = styled.div`
   height: 100%;
   background-color: ${({ theme }) => theme.background};
   padding: 32px;
-`;
+`
 
 const MobileContent = styled(Inner)`
   display: flex;
@@ -175,4 +175,4 @@ const MobileContent = styled(Inner)`
       margin-top: 1.6rem;
     }
   }
-`;
+`

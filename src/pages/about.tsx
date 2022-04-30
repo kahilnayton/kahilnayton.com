@@ -1,7 +1,7 @@
-import Hero from "components/_ui/Hero";
-import SubNav from "components/sections/SubNav";
-import { data, links } from "lib";
-import { Inner } from "styles/structure";
+import Hero from 'components/_ui/Hero'
+import SubNav from 'components/sections/SubNav'
+import { data, links } from 'lib'
+import { Inner } from 'styles/structure'
 
 export default function About() {
   return (
@@ -9,10 +9,10 @@ export default function About() {
       <Hero />
       <SubNav links={links} />
       <Inner>
-      {data.about.map((a, i) => (
-        <p key={i}>{ a}</p>
+        {data.about.map((a, i) => (
+          <p key={i}>{a}</p>
         ))}
-        </Inner>
+      </Inner>
     </>
-  );
-};
+  )
+}

@@ -1,22 +1,23 @@
-import Image from "next/image";
-import Fade from "react-reveal/Fade";
-import { ElevatedBox, ElevationWrapper } from "styles/elevation";
+import Image from 'next/image'
+// @ts-ignore
+import Fade from 'react-reveal/Fade'
+import { ElevatedBox, ElevationWrapper } from 'styles/elevation'
 import {
   CardImageContainer,
   Column,
   Container,
   Inner,
   VStack,
-} from "styles/structure";
+} from 'styles/structure'
 
-interface TwoColumnProps {
-  reverse?: boolean;
-  id?: string;
-  title?: string;
-  description?: string;
-  link?: string;
-  linkLable?: string;
-  imageSrc?: string;
+type TwoColumnProps = {
+  reverse?: boolean
+  id?: string
+  title?: string
+  description?: string
+  link?: string
+  linkLable?: string
+  imageSrc?: string
 }
 
 export default function TwoColumns({
@@ -39,7 +40,7 @@ export default function TwoColumns({
                   <Image
                     layout="fill"
                     objectFit="cover"
-                    src={imageSrc || "/public/image/kahil-guitar.jpg"}
+                    src={imageSrc || '/public/image/kahil-guitar.jpg'}
                     alt="hero"
                   />
                 </CardImageContainer>
@@ -58,5 +59,5 @@ export default function TwoColumns({
         </ElevationWrapper>
       </Inner>
     </Fade>
-  );
+  )
 }

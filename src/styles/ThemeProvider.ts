@@ -1,36 +1,36 @@
 // @ts-ignore
-import { createGlobalStyle } from "styled-components";
-import colors from "styles/colors";
-import dimensions from "styles/dimensions";
+import { createGlobalStyle } from 'styled-components'
+import colors from 'styles/colors'
+import dimensions from 'styles/dimensions'
 
-export const BACKGROUND_LIGHT = "hsl(0deg 0% 95%)";
-export const BACKGROUND_LIGHT_ALT = "#dfdfdf";
+export const BACKGROUND_LIGHT = 'hsl(0deg 0% 95%)'
+export const BACKGROUND_LIGHT_ALT = '#dfdfdf'
 
-export const BACKGROUND_DARK = "hsl(220deg 100% 80%)";
-export const BACKGROUND_DARK_ALT = "blue";
+export const BACKGROUND_DARK = 'hsl(220deg 100% 80%)'
+export const BACKGROUND_DARK_ALT = 'blue'
 
-export const TEXT_LIGHT = "#363537";
-export const TEXT_DARK = "#FAFAFA";
+export const TEXT_LIGHT = '#363537'
+export const TEXT_DARK = '#FAFAFA'
 
-export const ACCENT_LIGHT = "#8abac6";
-export const PRIMARY_BLUE = "#8abac6";
+export const ACCENT_LIGHT = '#8abac6'
+export const PRIMARY_BLUE = '#8abac6'
 
 export const lightTheme = {
-  body: "#FFF",
+  body: '#FFF',
   text: TEXT_LIGHT,
   background: BACKGROUND_LIGHT,
   backgroundAlt: BACKGROUND_LIGHT,
   accent: PRIMARY_BLUE,
-  shadowColor: "0deg 0% 50%",
-};
+  shadowColor: '0deg 0% 50%',
+}
 
 export const darkTheme = {
-  body: "#363537",
+  body: '#363537',
   text: TEXT_DARK,
-  background: "black",
+  background: 'black',
   accent: PRIMARY_BLUE,
-  shadowColor: "220deg 60% 50%",
-};
+  shadowColor: '220deg 60% 50%',
+}
 
 export const GlobalStyles = createGlobalStyle<{ theme: any }>`
   html {
@@ -91,4 +91,4 @@ export const GlobalStyles = createGlobalStyle<{ theme: any }>`
       overflow: initial;
     }
   }
-`;
+`

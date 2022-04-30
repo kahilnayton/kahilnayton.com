@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import dimensions from "styles/dimensions";
-import { SectionMaxWidth, SectionMinHeight } from "./constants";
+import styled from 'styled-components'
+import dimensions from 'styles/dimensions'
+import { SectionMaxWidth, SectionMinHeight } from './constants'
 
 export const Inner = styled.div`
   position: relative;
@@ -17,16 +17,16 @@ export const Inner = styled.div`
   @media (min-width: ${dimensions.desktop}px) {
     max-width: 126.4rem;
   }
-`;
+`
 
 export const Wrap = styled.div`
   position: relative;
   width: 100%;
   max-width: 97.4rem;
   margin: 0 auto;
-`;
+`
 
-export const Container = styled.div<{ reverse: boolean }>`
+export const Container = styled.div<{ reverse?: boolean }>`
   margin: auto;
   margin-top: 24px;
   min-height: ${SectionMinHeight};
@@ -37,9 +37,9 @@ export const Container = styled.div<{ reverse: boolean }>`
   gap: 1.8rem;
   @media (min-width: ${dimensions.tablet}px) {
     gap: 2.4rem;
-    flex-direction: ${(p) => (p.reverse ? "row" : "row-reverse")};
+    flex-direction: ${(p) => (p.reverse ? 'row' : 'row-reverse')};
   }
-`;
+`
 
 export const CardImageContainer = styled.div`
   position: relative;
@@ -48,7 +48,7 @@ export const CardImageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`;
+`
 
 export const ImageContainer = styled.div`
   display: flex;
@@ -60,25 +60,25 @@ export const ImageContainer = styled.div`
     min-height: 400px;
     min-width: 400px;
   }
-`;
+`
 
 export const Column = styled.div<{ image?: boolean }>`
   flex: 1;
   display: flex;
   justify-content: center;
-  flex-direction: ${(p) => (p.image ? "center" : "column")};
+  flex-direction: ${(p) => (p.image ? 'center' : 'column')};
   align-items: start;
   margin: auto;
   @media (min-width: ${dimensions.tablet}px) {
     /* display: contents; */
   }
-`;
+`
 
 export const LottieContainer = styled.div`
   position: absolute;
   bottom: 0;
   right: 0;
-`;
+`
 
 export const FooterContainer = styled.div`
   display: flex;
@@ -96,7 +96,7 @@ export const FooterContainer = styled.div`
     padding: 24px;
     padding-top: 4rem;
   }
-`;
+`
 
 export const UnorderedList = styled.ul`
   display: flex;
@@ -111,22 +111,22 @@ export const UnorderedList = styled.ul`
     margin: auto;
     animation-name: slideUpFade;
   }
-`;
+`
 
 export const ListItem = styled.li`
   display: inline-block;
   position: relative;
   top: 0.3rem;
   width: 5rem;
-`;
+`
 
 export const VStack = styled.div<{ spacingTop: number }>`
   display: flex;
   flex-direction: column;
   padding-top: ${({ spacingTop }) => spacingTop}rem;
-`;
+`
 
 export const FooterImage = styled.div`
   height: 10rem;
   width: 10rem;
-`;
+`

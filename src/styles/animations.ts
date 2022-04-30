@@ -1,4 +1,4 @@
-import { keyframes } from "styled-components";
+import { keyframes } from 'styled-components'
 
 export const sway = keyframes`
   0% {
@@ -12,7 +12,7 @@ export const sway = keyframes`
   100% {
     transform: rotate(0)
   }
-`;
+`
 
 export const swayTwo = keyframes`
 0% {
@@ -26,7 +26,7 @@ transform: rotate(-0.02turn)
 100% {
 transform: rotate(0)
 }
-`;
+`
 
 export const slideInTop = keyframes`
   0% {
@@ -36,7 +36,7 @@ export const slideInTop = keyframes`
   100% {
     transform: translateX(0);
   }
-`;
+`
 
 export const drawIn = keyframes`
   0% {
@@ -46,7 +46,7 @@ export const drawIn = keyframes`
   100% {
     transform: scaleX(1);
   }
-`;
+`
 
 export const drawDown = keyframes`
   0% {
@@ -56,7 +56,7 @@ export const drawDown = keyframes`
   100% {
     transform: translateY(-50%) scaleX(1);
   }
-`;
+`
 
 export const slideUpFade = keyframes`
   0% {
@@ -68,7 +68,7 @@ export const slideUpFade = keyframes`
     transform: translate(-50%, -200%);
     opacity: 0;
   }
-`;
+`
 
 export const lineAnimate = keyframes`
   0% {
@@ -89,4 +89,4 @@ export const lineAnimate = keyframes`
     background-size: 100% 0.2rem;
     background-position: left 100%;
   }
-`;
+`

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 const resetStyles = createGlobalStyle`
   /** * Eric Meyer"s Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
@@ -154,6 +154,6 @@ const resetStyles = createGlobalStyle`
     outline: 0;
     background-color: transparent;
   }
-`;
+`
 
-export default resetStyles;
+export default resetStyles

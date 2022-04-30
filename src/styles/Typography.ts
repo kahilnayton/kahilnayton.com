@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
-import dimensions from 'styles/dimensions';
-import colors from 'styles/colors';
+import { createGlobalStyle } from 'styled-components'
+import dimensions from 'styles/dimensions'
+import colors from 'styles/colors'
 
 const Typography = createGlobalStyle<{ theme: any }>`
   h1,
@@ -117,6 +117,6 @@ const Typography = createGlobalStyle<{ theme: any }>`
       cursor: pointer;
     }
   }
-`;
+`
 
-export default Typography;
+export default Typography

@@ -2,7 +2,7 @@ module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
   extends: ['next/core-web-vitals', 'next', 'prettier'],
-  plugins: ['@cb', '@typescript-eslint'],
+  plugins: ['@typescript-eslint'],
   rules: {
     'no-restricted-imports': [
       'error',

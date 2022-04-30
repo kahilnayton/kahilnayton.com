@@ -4,19 +4,19 @@ import {
   GrInstagram,
   GrTwitter,
   GrSpotify,
-} from 'react-icons/gr';
-import { ListItem, UnorderedList } from 'styles/structure';
+} from 'react-icons/gr'
+import { ListItem, UnorderedList } from 'styles/structure'
 import {
   FACEBOOK_URL,
   INSTAGRAM_URL,
   SPOTIFY_URL,
   TWITTER_URL,
   YOUTUBE_URL,
-} from 'lib';
+} from 'lib'
 
-interface SocialBarProps {
-  variant?: string;
-  toggleMobile?: () => void;
+type SocialBarProps = {
+  variant?: string
+  toggleMobile?: () => void
 }
 
 const SocialBar = ({ variant, toggleMobile }: SocialBarProps) => {
@@ -75,7 +75,7 @@ const SocialBar = ({ variant, toggleMobile }: SocialBarProps) => {
         </a>
       </ListItem>
     </UnorderedList>
-  );
-};
+  )
+}
 
-export default SocialBar;
+export default SocialBar

@@ -1,8 +1,8 @@
-import React from "react";
-import Hamburger from "../_ui/Hamburger";
+import React from 'react'
+import Hamburger from '@/components/_ui/Hamburger'
 
-interface LayoutProps {
-  children?: any;
+type LayoutProps = {
+  children?: any
 }
 
 const Layout = ({ children }: LayoutProps) => {
@@ -11,7 +11,7 @@ const Layout = ({ children }: LayoutProps) => {
       <Hamburger />
       {children}
     </>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout
