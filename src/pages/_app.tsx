@@ -7,7 +7,7 @@ import { lightTheme, darkTheme, GlobalStyles } from "../styles/ThemeProvider";
 import Typography from "../styles/Typography";
 
 import "../fonts/fonts.css";
-import Layout from "components/Layout";
+import Layout from "components/layouts/Layout";
 import Footer from "components/Footer";
 import { links } from "lib";
 

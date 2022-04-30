@@ -1,18 +1,18 @@
 import Hero from "components/_ui/Hero";
 import SubNav from "components/sections/SubNav";
-import TwoColumns from "components/layouts/TwoColumn";
 import { data, links } from "lib";
+import { Inner } from "styles/structure";
 
-const Home = () => {
+export default function About() {
   return (
     <>
       <Hero />
       <SubNav links={links} />
-      {Object.keys(data).map((keyName, i) => (
-        <TwoColumns key={i} {...data[keyName]} />
-      ))}
+      <Inner>
+      {data.about.map((a, i) => (
+        <p key={i}>{ a}</p>
+        ))}
+        </Inner>
     </>
   );
 };
-
-export default Home;

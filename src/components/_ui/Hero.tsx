@@ -9,6 +9,7 @@ const Hero = () => {
       <Image
         layout="fill"
         objectFit="cover"
+        objectPosition="top"
         src="/images/final-color-02-layers.jpg"
         alt="hero"
       />
@@ -24,7 +25,7 @@ const HeroContainer = styled.div`
   position: relative;
 
   @media (min-width: ${dimensions.tablet}px) {
-    height: 600px;
+    height: 700px;
     padding-top: 0rem;
   }
 `;

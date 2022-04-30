@@ -3,18 +3,18 @@ import {
   FooterContainer,
   FooterImage,
   Inner,
-  LottieContainer,
   VStack,
 } from "styles/structure";
-import SocialBar from "components/SocialBar";
-import Lottie from "react-lottie";
+import SocialBar from "components/_ui/SocialBar";
 import Switch from "@mui/material/Switch";
 
 import { styled } from "@mui/material/styles";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import { LinkType } from "lib";
-import { ObjectFitImage } from "components/Hero";
+import { ObjectFitImage } from "components/_ui/Hero";
+import NavLinks from "components/_ui/NavLinks";
+import Link from "next/link";
 
 interface FooterProps {
   toggleTheme: () => void;
@@ -76,11 +76,7 @@ export default function Footer({ toggleTheme, theme, links }: FooterProps) {
         <VStack spacingTop={2}>
           <SocialBar />
           <VStack spacingTop={2}>
-            {links.map((link, i) => (
-              <a key={`link_${i}`} href={`#${link.href}`}>
-                {link.label}
-              </a>
-            ))}
+            <NavLinks links={links}/>
           </VStack>
           <FormGroup>
             <FormControlLabel
@@ -96,9 +92,14 @@ export default function Footer({ toggleTheme, theme, links }: FooterProps) {
             />
           </FormGroup>
         </VStack>
+        <Link href="/">
+          <a>
+
         <FooterImage>
           <ObjectFitImage src="/images/SVG/logo.svg" alt="" />
         </FooterImage>
+          </a>
+        </Link>
       </FooterContainer>
     </Inner>
   );
