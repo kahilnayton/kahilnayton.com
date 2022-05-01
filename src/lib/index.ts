@@ -48,7 +48,7 @@ export const data = {
     title: 'New Music',
     imageSrc: '/images/SVG/sketch-01.svg',
     description:
-      'Just released some new tunes. 2021 was a year of lots of transition and writing some new music felt like the best way to get through the whirlwind of change and life upheaval. You can check it out on Spotify.',
+      'New single dropping very soon! 2021 was a year of lots of transition and writing some new music felt like the best way to get through the whirlwind of change and life upheaval. You can check out some other tunes on Spotify in the meantime.',
     link: SPOTIFY_URL,
     linkLable: 'Listen',
     reverse: false,
