@@ -38,6 +38,7 @@ export const links: LinkType[] = [
   {
     label: 'About',
     page: '/about',
+    href: 'about',
   },
 ]
 
@@ -47,7 +48,7 @@ export const data = {
     title: 'New Music',
     imageSrc: '/images/SVG/sketch-01.svg',
     description:
-      'Just about to release some new tunes! 2021 was a year of lots of transition and turbulence so writing some new music felt like the best way to get through the whirlwind of change and life upheaval. New music will drop in about a month!',
+      'Just released some new tunes. 2021 was a year of lots of transition and writing some new music felt like the best way to get through the whirlwind of change and life upheaval. You can check it out on Spotify.',
     link: SPOTIFY_URL,
     linkLable: 'Listen',
     reverse: false,
@@ -66,7 +67,7 @@ export const data = {
     id: 'nft',
     title: 'NFT',
     imageSrc: '/images/SVG/nft.svg',
-    description: `I'm a bit of a crypto nerd and thought it would be fun to tokenize this new release, so if you want to buy some non fungible tokens or if you are interested in the crypto space. I feel like the way streaming is currently set up musos kinda get a rough deal and although it's early days maybe block chain tech can help empower creatives in the future. Happy to chat about the process if you're interested to learn!`,
+    description: `It’s still early days for Non Fungible Tokens and who knows if it’ll be the new platform for artists to release their creative works on, but one thing I’ve noticed is the lack of representation smaller and marginalized groups get within the space. This project will support this issue by giving local acts a platform to release their music as an NFT. Coming soon will be a series of featured artists and groups and a place to explore and own a part of the great new music coming out of Brooklyn.`,
     link: NFT_URL,
     linkLable: `Learn about NFT's`,
     reverse: false,
@@ -75,7 +76,7 @@ export const data = {
     id: 'video',
     title: 'New Video',
     imageSrc: '/images/SVG/vid_preview.svg',
-    description: `Some time ago now, a good mate had an idea for a music clip for one of my songs. The subsequent events that grew out of this idea ended up being quite unexpected… I'll write some more words about it as we finish up because it’s gonna be a tight clip and deserves a place in the world.`,
+    description: `Some time ago a good mate had an idea for a music clip for one of my songs. The subsequent events from this video clip became quite the story. We’re going to have some clips coming soon and take you down the rabbithole involving a mushroom, months of psychiatric counseling and reconnecting with an old mate.`,
     link: YOUTUBE_URL,
     linkLable: 'Check out some other vids',
     reverse: true,
@@ -84,13 +85,9 @@ export const data = {
     id: 'bandcamp',
     title: 'Bandcamp',
     imageSrc: '/images/SVG/flowers.svg',
-    description: `Bandcamp is a great way to show some support, not just for this music, but for all musicians. Spitify pays bugger all to artists so if you like someone's music go buy it on Bandcamp. Some of the guys who played on these tracks have some particularly good stuff.`,
+    description: `Bandcamp is a great way to show some support, not just for this music, but for all musicians. Spotify pays bugger all to artists so if you like someone's music go buy it on Bandcamp. Some of the guys who played on these tracks have some particularly good stuff.`,
     link: BANDCAMP_URL,
     linkLable: 'Head to bandcamp',
     reverse: false,
   },
 }
-export const about = [
-  'As to be expected after spending about 6 years in NYC after moving there from Australia I was feeling the need to reconnect with home and family. The obvious way to do that since there was half a world between us was to start writing some music with my sister, so in 2018 popped into the Avery studio while on a trip back in Melbourne. We tracked the better part of 3 tracks, called the project Bonds and I went ahead and finished up the production in NYC. The result of this was some pretty raw original music, but it has a vibe and I dig it. I had never really gone through the process of releasing original music before where I was doing a good bit of the singing, writing and playing of the instrucments and it left me keen to pick up the guitar and keep writing.',
-  'The next time round',
-]

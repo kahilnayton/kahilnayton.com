@@ -8,18 +8,17 @@ type SubNavProps = {
 
 export default function NavLinks({ links }: SubNavProps) {
   const router = useRouter()
-  console.log(router.asPath)
   return (
     <>
       {links.map((link, i) => {
         const hideRoute = router.asPath.includes(link.label.toLowerCase())
 
-        return link.href ? (
-          <a key={`link_${i}`} href={`#${link.href}`}>
-            {!hideRoute && link.label}
+        return !link.page ? (
+          <a key={`link_${i}`} href={`/#${link.href}`}>
+            {link.label}
           </a>
         ) : !hideRoute ? (
-          <Link key={`link_${i}`} href={link.page}>
+          <Link key={`link_${i}`} href={link.page + `#${link.href}`}>
             {link.label}
           </Link>
         ) : (

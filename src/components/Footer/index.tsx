@@ -7,7 +7,7 @@ import { styled } from '@mui/material/styles'
 import FormGroup from '@mui/material/FormGroup'
 import FormControlLabel from '@mui/material/FormControlLabel'
 import type { LinkType } from 'lib'
-import { ObjectFitImage } from 'components/_ui/Hero'
+import Image from 'next/image'
 import NavLinks from 'components/_ui/NavLinks'
 import Link from 'next/link'
 
@@ -66,7 +66,7 @@ const SwitchThemeToggle = styled(Switch)(({ theme }) => ({
 
 export default function Footer({ toggleTheme, theme, links }: FooterProps) {
   return (
-    <Inner>
+    <Inner paddingHorizontal={true}>
       <FooterContainer>
         <VStack spacingTop={2}>
           <SocialBar />
@@ -89,9 +89,7 @@ export default function Footer({ toggleTheme, theme, links }: FooterProps) {
         </VStack>
         <Link href="/">
           <a>
-            <FooterImage>
-              <ObjectFitImage src="/images/SVG/logo.svg" alt="" />
-            </FooterImage>
+            <Image width={70} height={70} src="/images/SVG/logo.svg" alt="" />
           </a>
         </Link>
       </FooterContainer>

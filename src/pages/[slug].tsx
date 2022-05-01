@@ -3,7 +3,7 @@ import matter from 'gray-matter'
 import md from 'markdown-it'
 import Hero from 'components/_ui/Hero'
 import SubNav from 'components/sections/SubNav'
-import { links, about } from 'lib'
+import { links } from 'lib'
 import { Inner } from 'styles/structure'
 import SEO from '@/components/SEO'
 
@@ -34,11 +34,14 @@ export async function getStaticProps({ params: { slug } }: any) {
 export default function PostPage({ frontmatter, content }: any) {
   return (
     <>
-      <SEO openGraphType="website" schemaType="about" description={about[0]} />
+      <SEO openGraphType="website" schemaType="about" description={content} />
       <Hero />
       <SubNav links={links} />
-      <Inner>
-        <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+      <Inner paddingHorizontal={true}>
+        <div
+          id="about"
+          dangerouslySetInnerHTML={{ __html: md().render(content) }}
+        />
       </Inner>
     </>
   )

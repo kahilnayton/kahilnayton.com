@@ -2,16 +2,20 @@ import styled from 'styled-components'
 import dimensions from 'styles/dimensions'
 import { SectionMaxWidth, SectionMinHeight } from './constants'
 
-export const Inner = styled.div`
+export const Inner = styled.div<{ paddingHorizontal?: boolean }>`
   position: relative;
   width: 100%;
   margin: 0 auto;
   height: 100%;
   max-width: ${SectionMaxWidth};
   padding-top: 4rem;
+  padding-left: ${(p) => p.paddingHorizontal && '16px'};
+  padding-right: ${(p) => p.paddingHorizontal && '16px'};
 
   @media (min-width: ${dimensions.tablet}px) {
     padding-top: 6rem;
+    padding-left: ${(p) => p.paddingHorizontal && '32px'};
+    padding-right: ${(p) => p.paddingHorizontal && '32px'};
   }
 
   @media (min-width: ${dimensions.desktop}px) {
@@ -88,13 +92,12 @@ export const FooterContainer = styled.div`
   margin: auto;
   height: 40rem;
   max-width: ${SectionMaxWidth};
-  padding: 16px;
+  padding-top: 16px;
   background-color: ${({ theme }) => theme.backgroundAlt};
 
   @media (min-width: ${dimensions.tablet}px) {
     flex-direction: row;
-    padding: 24px;
-    padding-top: 4rem;
+    padding-top: 24px;
   }
 `
 
