@@ -1,9 +1,9 @@
 ### About
 
-As to be expected after spending about 6 years in NYC since moving here from Australia I was feeling the need to reconnect with home and family. The easiest way to do that since there was half a planet between us was to start writing music again with my sister, so in 2018 after popping  into the Avery studio in Melbourne for the initial tracking we coordinated the release of a 3 track EP. The project was coined Bonds (changing soon to ‘music that mums like’) and I went ahead and finished up the production in NYC. The result of this was some pretty DIY original music. I had never really gone through the process of releasing original music before where I was doing a good bit of the singing, writing and playing and it left me keen to pick up the guitar and keep writing.
+I am Kahil. Originally from Australia, I moved to New York City in 2011 and have been making music here ever since. I’ve played in bands such as [Regional de NY](https://open.spotify.com/track/5i2FKbQvwR2ZJoOc1qCaZ3?si=16ee82f4d4654162), [Bonds](https://open.spotify.com/artist/2AGbrwPzOcQMAVjLgNDOZd?si=DWxFf2eZRtef9LCE3DVOuw), [The Shaolin Afronauts](https://open.spotify.com/track/6k6JSwl4Xs9goFC8VZ098l?si=3c72457467864fbf) & [The Transatlantic](https://open.spotify.com/track/6a3Tg3l7s8uXQrLsSNJt4Y?si=830661c834ba4b55), to name a few. 
 
-The next time round was 2020 and since the coronavirus was laying siege on the world I couldn’t travel and completed the next lot of songs solo. Again it felt great to share songs I’d written to reconnect with people since now not just being far away from friends and family, but also being unable to visit them. At this point I just went ahead and released the tracks under my name and continue to write and track when possible on the project with my family. 
+After six years in NYC, I started writing music with my sister for our project Bonds; we recorded our first EP at the Avery Studio in Melbourne. Releasing music as Bonds inspired me to start making music under my own name in 2020.
 
-I feel very grateful to be able to play and record with talented friends in Brooklyn and it continues to bring good vibes into the somewhat scattered work we live in these days. If you get a chance to listen to the tracks I’d really appreciate it.
+In 2022 I will be releasing a new album titled Wayfinding. You can follow me on [Instagram](https://www.instagram.com/kahilnayton/?hl=en) to keep up to date for this album as well as other music i'm working on.
 
-Xx kahil 
+
