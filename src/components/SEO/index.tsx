@@ -17,7 +17,7 @@ const SEO = (props: Record<string, string>) => {
       />
       <meta property="og:url" content={props.url || config.url} />
       <meta property="og:type" content="website" />
-      <link rel="icon" href="/images/SVG/kahil_logo.svg" />
+      <link rel="icon" href="/favicon.ico" />
     </Head>
   )
 }
