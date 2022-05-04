@@ -1,6 +1,6 @@
 export const config = {
-  rootUrl: 'http://localhost:5000',
-  title: `Kahil Nayton music`,
+  rootUrl: 'http://localhost:3000',
+  title: `Kahil Nayton`,
   description: `New music, upcoming gigs and things of that nature`,
   social: {
     graphic:
