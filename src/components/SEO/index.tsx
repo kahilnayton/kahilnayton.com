@@ -5,10 +5,10 @@ import React from 'react'
 const SEO = (props: Record<string, string>) => {
   return (
     <Head>
-      <title>{config.title || props.title}</title>
+      <title>{props.title || config.title}</title>
       <meta
         name="description"
-        content={`Learn more about ${props.title || config.title}`}
+        content={props.description || config.description}
       />
       <meta property="og:title" content={props.title || config.title} />
       <meta
@@ -17,6 +17,9 @@ const SEO = (props: Record<string, string>) => {
       />
       <meta property="og:url" content={props.url || config.url} />
       <meta property="og:type" content="website" />
+      <meta name="robots" content="index, follow" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta charSet="UTF-8" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
   )

@@ -34,7 +34,12 @@ export async function getStaticProps({ params: { slug } }: any) {
 export default function PostPage({ frontmatter, content }: any) {
   return (
     <>
-      <SEO openGraphType="website" schemaType="about" description={content} />
+      <SEO
+        openGraphType="website"
+        schemaType="about"
+        title="about"
+        description={content}
+      />
       <Hero />
       <SubNav links={links} />
       <Inner paddingHorizontal={true}>
