@@ -1,5 +1,5 @@
 export const config = {
-  rootUrl: 'http://localhost:3000',
+  rootUrl: 'https://localhost:3000',
   title: `Kahil Nayton`,
   description: `New music, upcoming gigs and things of that nature`,
   social: {
@@ -9,10 +9,10 @@ export const config = {
   },
   author: {
     name: 'kahil nayton',
-    summary: 'http://www.kahilnayton.com/',
+    summary: 'https://www.kahilnayton.com/',
   },
-  image: `src/images/train.jpg`,
-  url: `http://www.kahilnayton.com/`,
+  image: `/images/train.jpg`,
+  url: `https://www.kahilnayton.com/`,
   siteLanguage: `en-US`,
   siteLocale: `en_us`,
   routes: {
