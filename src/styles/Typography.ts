@@ -1,6 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import dimensions from 'styles/dimensions'
-import colors from 'styles/colors'
+import { dimensions } from '@/styles'
 
 const Typography = createGlobalStyle<{ theme: any }>`
   h1,

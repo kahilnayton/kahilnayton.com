@@ -1,8 +1,8 @@
+import TwoColumns from '@/components/layouts/TwoColumn'
+import SubNav from '@/components/sections/SubNav'
 import SEO from '@/components/SEO'
-import TwoColumns from 'components/layouts/TwoColumn'
-import SubNav from 'components/sections/SubNav'
-import Hero from 'components/_ui/Hero'
-import { data, links } from 'lib'
+import Hero from '@/components/shared/ui/Hero'
+import { data, links } from '@/lib'
 
 const Home = () => {
   return (

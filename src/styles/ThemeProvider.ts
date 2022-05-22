@@ -1,7 +1,7 @@
 // @ts-ignore
 import { createGlobalStyle } from 'styled-components'
-import colors from 'styles/colors'
-import dimensions from 'styles/dimensions'
+import { colors } from '@/styles'
+import { dimensions } from '@/styles'
 
 export const BACKGROUND_LIGHT = 'hsl(0deg 0% 95%)'
 export const BACKGROUND_LIGHT_ALT = '#dfdfdf'

@@ -5,14 +5,14 @@ import {
   GrTwitter,
   GrSpotify,
 } from 'react-icons/gr'
-import { ListItem, UnorderedList } from 'styles/structure'
+import { ListItem, UnorderedList } from '@/styles'
 import {
   FACEBOOK_URL,
   INSTAGRAM_URL,
   SPOTIFY_URL,
   TWITTER_URL,
   YOUTUBE_URL,
-} from 'lib'
+} from '@/lib'
 
 type SocialBarProps = {
   variant?: string

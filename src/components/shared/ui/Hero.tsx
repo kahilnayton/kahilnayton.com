@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import styled from 'styled-components'
-import { headerHeightMobile } from 'styles/constants'
-import dimensions from 'styles/dimensions'
+import { headerHeightMobile, dimensions } from '@/styles'
 
 const Hero = () => {
   return (

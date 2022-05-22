@@ -1,11 +1,10 @@
 import styled from 'styled-components'
 import Link from 'next/link'
 
-import { Inner } from 'styles/structure'
-import dimensions from 'styles/dimensions'
-import SocialBar from 'components/_ui/SocialBar'
-import type { LinkType } from 'lib'
-import NavLinks from 'components/_ui/NavLinks'
+import { Inner, dimensions } from '@/styles'
+import SocialBar from '@/components/shared/ui/SocialBar'
+import type { LinkType } from '@/lib'
+import NavLinks from '@/components/shared/ui/NavLinks'
 
 type SubNavProps = {
   links: LinkType[]

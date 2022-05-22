@@ -7,13 +7,16 @@ import { lightTheme, darkTheme, GlobalStyles } from '@/styles/ThemeProvider'
 import Typography from '@/styles/Typography'
 
 import '@/fonts/fonts.css'
-import Layout from 'components/layouts/Layout'
-import Footer from 'components/Footer'
-import { links } from 'lib'
+import Layout from '@/components/layouts/Layout'
+import Footer from '@/components/Footer'
+import { links } from '@/lib'
 
 type AppProps = {
   Component: any
   pageProps: any
+}
+export function reportWebVitals(metric: any) {
+  console.warn({ ...metric })
 }
 
 export default function App({ Component, pageProps }: AppProps) {

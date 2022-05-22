@@ -3,10 +3,10 @@ import styled from 'styled-components'
 // @ts-ignore
 import { document } from 'browser-monads'
 
-import { Inner } from 'styles/structure'
-import dimensions from 'styles/dimensions'
-import { links } from 'lib'
-import { headerHeightMobile, z } from 'styles/constants'
+import { Inner } from '@/styles'
+import { dimensions } from '@/styles'
+import { links } from '@/lib'
+import { headerHeightMobile, z } from '@/styles'
 
 export default function Hamburger() {
   const [isOpen, setIsOpen] = useState(false)

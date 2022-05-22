@@ -1,4 +1,4 @@
-import { Inner } from 'styles/structure'
+import { Inner } from '@/styles'
 
 type GigsProps = {
   id?: string

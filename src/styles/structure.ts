@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import dimensions from 'styles/dimensions'
+import { dimensions } from '@/styles'
 import { SectionMaxWidth, SectionMinHeight } from './constants'
 
 export const Inner = styled.div<{ paddingHorizontal?: boolean }>`

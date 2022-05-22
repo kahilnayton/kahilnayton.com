@@ -1,5 +1,5 @@
 //theme colors and tints (dark900 to normal500 to light100)
-const colors = {
+export const colors = {
   grey900: '#111010',
   grey800: '#3D3F42',
   grey700: '#7D7F81',
@@ -21,5 +21,3 @@ const colors = {
   brown: '#cdb088',
   white: '#fff',
 }
-
-export default colors
