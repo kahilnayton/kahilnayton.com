@@ -1,19 +1,14 @@
+import { breakpointKeys, mediaQueries } from '@/components/shared/media'
+import { Box, palette } from '@/styles'
 import type { ForwardedRef } from 'react'
 import { forwardRef } from 'react'
-
 import styled from 'styled-components'
-
-import { Box } from '@/styles'
-import { palette } from '@/styles'
-
-import { breakpointKeys, mediaQueries } from '@/components/shared/media'
-
 import type {
-  ResponsiveStyleProps,
-  StyleProps,
-  StandardStyleProps,
   CustomStyleProps,
+  ResponsiveStyleProps,
+  StandardStyleProps,
   StyleFunction,
+  StyleProps,
 } from './types'
 
 export const pinStyles = {
@@ -79,7 +74,6 @@ const stylePropFunctions: {
 
   pin: (v) => pinStyles[v],
 
-  // Handle colors from both Spectrum and the CDS palette
   color: (v) => ({
     color:
       typeof v === 'object'
