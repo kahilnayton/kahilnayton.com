@@ -1,14 +1,14 @@
 import React from 'react'
-import { FooterContainer, FooterImage, Inner, VStack } from 'styles/structure'
-import SocialBar from 'components/_ui/SocialBar'
+import { FooterContainer, FooterImage, Inner, VStack } from '@/styles'
+import SocialBar from '@/components/shared/ui/SocialBar'
 import Switch from '@mui/material/Switch'
 
 import { styled } from '@mui/material/styles'
 import FormGroup from '@mui/material/FormGroup'
 import FormControlLabel from '@mui/material/FormControlLabel'
-import type { LinkType } from 'lib'
+import type { LinkType } from '@/lib'
 import Image from 'next/image'
-import NavLinks from 'components/_ui/NavLinks'
+import NavLinks from '@/components/shared/ui/NavLinks'
 import Link from 'next/link'
 
 type FooterProps = {

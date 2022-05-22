@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import dimensions from './dimensions'
+import { dimensions } from '@/styles'
 
 const ELEVATIONS = {
   small: `

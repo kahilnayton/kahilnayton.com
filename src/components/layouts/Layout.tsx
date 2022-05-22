@@ -1,5 +1,5 @@
 import React from 'react'
-import Hamburger from '@/components/_ui/Hamburger'
+import Hamburger from '@/components/shared/ui/Hamburger'
 
 type LayoutProps = {
   children?: any

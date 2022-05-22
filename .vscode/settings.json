@@ -28,6 +28,5 @@
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "gitlens.remotes": [{ "domain": "github.cbhq.net", "type": "GitHub" }]
+  }
 }

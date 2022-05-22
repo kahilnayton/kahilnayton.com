@@ -1,14 +1,15 @@
 import Image from 'next/image'
 // @ts-ignore
 import Fade from 'react-reveal/Fade'
-import { ElevatedBox, ElevationWrapper } from 'styles/elevation'
 import {
+  ElevatedBox,
+  ElevationWrapper,
   CardImageContainer,
   Column,
   Container,
   Inner,
   VStack,
-} from 'styles/structure'
+} from '@/styles'
 
 type TwoColumnProps = {
   reverse?: boolean

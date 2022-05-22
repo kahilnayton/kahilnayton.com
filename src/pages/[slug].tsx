@@ -1,10 +1,10 @@
 import fs from 'fs'
 import matter from 'gray-matter'
 import md from 'markdown-it'
-import Hero from 'components/_ui/Hero'
-import SubNav from 'components/sections/SubNav'
-import { links } from 'lib'
-import { Inner } from 'styles/structure'
+import Hero from '@/components/shared/ui/Hero'
+import SubNav from '@/components/sections/SubNav'
+import { links } from '@/lib'
+import { Inner } from '@/styles'
 import SEO from '@/components/SEO'
 
 export async function getStaticPaths() {
