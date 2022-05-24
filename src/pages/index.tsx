@@ -4,6 +4,7 @@ import SEO from '@/components/SEO'
 import Hero from '@/components/shared/ui/Hero'
 import { VideoPlayer } from '@/components/shared/ui/VideoPlayer'
 import { data, links } from '@/lib'
+import { Inner } from '@/styles'
 import { getContentModel, GetContentModelParams } from '@/utils/contentful'
 import ErrorPage from 'next/error'
 
@@ -11,6 +12,8 @@ const Home = ({ page }: { page: any }) => {
   if (!page) {
     return <ErrorPage statusCode={404} />
   }
+
+  console.log(page.fields.heroImage.fields.file.url)
 
   return (
     <>
@@ -21,7 +24,12 @@ const Home = ({ page }: { page: any }) => {
         // @ts-ignore
         return <TwoColumns key={i} {...data[keyName]} />
       })}
-      <VideoPlayer mediaUrl={page.fields.youTubeUrl} />
+      <Inner paddingHorizontal={true}>
+        <VideoPlayer
+          thumbnailUrl={page.fields.heroImage.fields.file.url}
+          mediaUrl={page?.fields?.youTubeUrl}
+        />
+      </Inner>
     </>
   )
 }

@@ -1,9 +1,6 @@
-import { useState, useEffect } from 'react'
-
-import styled from 'styled-components'
-
 import { ResponsiveImage } from '@/components/shared/ui/Image'
-
+import { useEffect, useState } from 'react'
+import styled from 'styled-components'
 import { getYoutubeThumbnail, isYoutube } from './linkUtils'
 
 type ThumbnailProps = {
@@ -43,7 +40,7 @@ export const Thumbnail = ({
   }, [customThumbnail, mediaUrl])
 
   return (
-    <ImageContainer freezeAnimation={showVideo}>
+    <ImageContainer freezeAnimation={false}>
       {thumbnail && (
         <ResponsiveImage
           imageAlt={thumbnailAlt}
