@@ -1,15 +1,15 @@
-import Image from 'next/image'
-// @ts-ignore
-import Fade from 'react-reveal/Fade'
 import {
-  ElevatedBox,
-  ElevationWrapper,
   CardImageContainer,
   Column,
   Container,
+  ElevatedBox,
+  ElevationWrapper,
+  Img,
   Inner,
   VStack,
 } from '@/styles'
+// @ts-ignore
+import Fade from 'react-reveal/Fade'
 
 type TwoColumnProps = {
   reverse?: boolean
@@ -19,10 +19,11 @@ type TwoColumnProps = {
   link?: string
   linkLable?: string
   imageSrc?: string
+  body?: any
 }
 
 export default function TwoColumns({
-  reverse,
+  reverse = true,
   id,
   title,
   imageSrc,
@@ -38,9 +39,7 @@ export default function TwoColumns({
             <Container reverse={reverse}>
               <Column image={true}>
                 <CardImageContainer>
-                  <Image
-                    layout="fill"
-                    objectFit="cover"
+                  <Img
                     src={imageSrc || '/public/image/kahil-guitar.jpg'}
                     alt="hero"
                   />

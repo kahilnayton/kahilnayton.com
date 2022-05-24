@@ -1,5 +1,5 @@
-import styled from 'styled-components'
 import { dimensions } from '@/styles'
+import styled from 'styled-components'
 import { SectionMaxWidth, SectionMinHeight } from './constants'
 
 export const Inner = styled.div<{ paddingHorizontal?: boolean }>`
@@ -52,6 +52,12 @@ export const CardImageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `
 
 export const ImageContainer = styled.div`
@@ -133,3 +139,5 @@ export const FooterImage = styled.div`
   height: 10rem;
   width: 10rem;
 `
+
+export const Img = styled.img``
