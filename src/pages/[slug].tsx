@@ -20,15 +20,12 @@ const About = ({ page }: { page: any }) => {
   )
 }
 
-export default About
-
 export const getServerSideProps = async (params: GetContentModelParams) => {
   const page = await getContentModel({
     ...params,
   })
-  return {
-    props: { page },
-  }
+
+  if (!page) return null
 }
 
 export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
@@ -37,3 +34,5 @@ export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
     fallback: 'blocking',
   }
 }
+
+export default About
