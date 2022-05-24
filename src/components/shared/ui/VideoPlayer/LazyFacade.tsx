@@ -1,10 +1,7 @@
-import { useState, useCallback, useMemo } from 'react'
-
-import styled from 'styled-components'
-
 import { useBreakpoint } from '@/components/shared/hooks/useBreakpoint'
 import { useLogger } from '@/providers/LoggerProvider'
-
+import { useCallback, useMemo, useState } from 'react'
+import styled from 'styled-components'
 import { isYoutube, standardizeYoutubeUrl } from './linkUtils'
 import PlayButton from './PlayButton.svg'
 import { PlayerFrame } from './PlayerFrame'
@@ -101,8 +98,6 @@ const FacadePlayOverlay = () => {
         alt="Play video"
         src={Icon}
       />
-
-      {!isPhone && <White>Play</White>}
     </OverlayContainer>
   )
 }
@@ -123,8 +118,4 @@ const OverlayContainer = styled.div<{ centered: boolean }>`
 const CirclePlay = styled.img<{ sizing: 'lg' | 'md' }>`
   width: ${({ sizing }) => (sizing === 'lg' ? '104px' : '64px')};
   height: ${({ sizing }) => (sizing === 'lg' ? '104px' : '64px')};
-`
-
-const White = styled.span`
-  color: white;
 `
