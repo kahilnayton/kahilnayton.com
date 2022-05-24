@@ -3,6 +3,7 @@ import SEO from '@/components/SEO'
 import Hero from '@/components/shared/ui/Hero'
 import { links } from '@/lib'
 import { getContentModel, GetContentModelParams } from '@/utils/contentful'
+import type { GetStaticPaths } from 'next'
 import ErrorPage from 'next/error'
 
 const About = ({ page }: { page: any }) => {
@@ -27,5 +28,12 @@ export const getServerSideProps = async (params: GetContentModelParams) => {
   })
   return {
     props: { page },
+  }
+}
+
+export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
+  return {
+    paths: [],
+    fallback: 'blocking',
   }
 }
