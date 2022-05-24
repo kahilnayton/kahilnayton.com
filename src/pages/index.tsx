@@ -13,8 +13,6 @@ const Home = ({ page }: { page: any }) => {
     return <ErrorPage statusCode={404} />
   }
 
-  console.log(page.fields.heroImage.fields.file.url)
-
   return (
     <>
       <SEO openGraphType="website" schemaType="home" />
@@ -26,8 +24,8 @@ const Home = ({ page }: { page: any }) => {
       })}
       <Inner paddingHorizontal={true}>
         <VideoPlayer
-          thumbnailUrl={page.fields.heroImage.fields.file.url}
           mediaUrl={page?.fields?.youTubeUrl}
+          thumbnailUrl={page?.fields?.heroImage?.fields.file.url}
         />
       </Inner>
     </>
