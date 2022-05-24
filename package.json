@@ -6,11 +6,11 @@
   "author": "Kahil Nayton",
   "scripts": {
     "dev": "next dev",
-    "build": "DOTENV_PATH=configs/.env.local next build",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint ./ --ext js,jsx,ts,tsx",
     "find:unused": "next-unused",
-    "lint-all": "DOTENV_PATH=configs/.env.local next lint --fix --dir src & npm run prettier"
+    "lint-all": "next lint --fix --dir src & npm run prettier"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
