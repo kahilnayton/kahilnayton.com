@@ -6,13 +6,8 @@ import { VideoPlayer } from '@/components/shared/ui/VideoPlayer'
 import { data, links } from '@/lib'
 import { Inner } from '@/styles'
 import { getContentModel, GetContentModelParams } from '@/utils/contentful'
-import ErrorPage from 'next/error'
 
 const Home = ({ page }: { page: any }) => {
-  if (!page) {
-    return <ErrorPage statusCode={404} />
-  }
-
   return (
     <>
       <SEO openGraphType="website" schemaType="home" />
@@ -22,12 +17,14 @@ const Home = ({ page }: { page: any }) => {
         // @ts-ignore
         return <TwoColumns key={i} {...data[keyName]} />
       })}
-      <Inner paddingHorizontal={true}>
-        <VideoPlayer
-          mediaUrl={page?.fields?.youTubeUrl}
-          thumbnailUrl={page?.fields?.heroImage?.fields.file.url}
-        />
-      </Inner>
+      {page && (
+        <Inner paddingHorizontal={true}>
+          <VideoPlayer
+            mediaUrl={page?.fields?.youTubeUrl}
+            thumbnailUrl={page?.fields?.heroImage?.fields.file.url}
+          />
+        </Inner>
+      )}
     </>
   )
 }
