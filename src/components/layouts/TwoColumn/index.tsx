@@ -1,48 +1,53 @@
-import Image from 'next/image'
-// @ts-ignore
-import Fade from 'react-reveal/Fade'
+import { ResponsiveImage } from '@/components/shared/ui/Image'
 import {
-  ElevatedBox,
-  ElevationWrapper,
   CardImageContainer,
   Column,
   Container,
+  ElevatedBox,
+  ElevationWrapper,
   Inner,
   VStack,
 } from '@/styles'
+// @ts-ignore
+import Fade from 'react-reveal/Fade'
 
 type TwoColumnProps = {
   reverse?: boolean
   id?: string
   title?: string
+  slug?: string
+  heroImage?: any
+  ctaLink?: string
+  ctaLabel?: string
+  body?: any
   description?: string
   link?: string
-  linkLable?: string
   imageSrc?: string
 }
 
 export default function TwoColumns({
-  reverse,
-  id,
+  reverse = true,
+  slug,
   title,
-  imageSrc,
+  heroImage,
   description,
-  link,
-  linkLable,
+  ctaLink,
+  ctaLabel,
 }: TwoColumnProps) {
   return (
     <Fade bottom>
-      <Inner id={id}>
+      <Inner id={slug}>
         <ElevationWrapper>
           <ElevatedBox>
             <Container reverse={reverse}>
               <Column image={true}>
                 <CardImageContainer>
-                  <Image
-                    layout="fill"
-                    objectFit="cover"
-                    src={imageSrc || '/public/image/kahil-guitar.jpg'}
-                    alt="hero"
+                  <ResponsiveImage
+                    imageAlt="image"
+                    imageSrc={
+                      heroImage?.fields?.file?.url ||
+                      '/public/image/kahil-guitar.jpg'
+                    }
                   />
                 </CardImageContainer>
               </Column>
@@ -50,8 +55,8 @@ export default function TwoColumns({
                 <h1>{title}</h1>
                 <p>{description}</p>
                 <VStack spacingTop={2}>
-                  <a target="_blank" rel="noreferrer" href={link}>
-                    {linkLable}
+                  <a target="_blank" rel="noreferrer" href={ctaLink}>
+                    {ctaLabel}
                   </a>
                 </VStack>
               </Column>

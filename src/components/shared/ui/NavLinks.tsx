@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import type { LinkType } from '@/lib'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 type SubNavProps = {

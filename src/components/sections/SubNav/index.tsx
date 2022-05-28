@@ -1,10 +1,8 @@
-import styled from 'styled-components'
-import Link from 'next/link'
-
-import { Inner, dimensions } from '@/styles'
+import NavLinks from '@/components/shared/ui/NavLinks'
 import SocialBar from '@/components/shared/ui/SocialBar'
 import type { LinkType } from '@/lib'
-import NavLinks from '@/components/shared/ui/NavLinks'
+import { dimensions, Inner } from '@/styles'
+import styled from 'styled-components'
 
 type SubNavProps = {
   links: LinkType[]
