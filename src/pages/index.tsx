@@ -8,7 +8,7 @@ import { Inner } from '@/styles'
 import { getContentModel, GetContentModelParams } from '@/utils/contentful'
 
 const Home = ({ page }: { page: any }) => {
-  const { featured, youTubeUrl, heroImage } = page.fields || {}
+  const { featured, youTubeUrl, videoThumbnail } = page.fields || {}
 
   // TODO: fix this logic
   // const getAnchorLinks = () => {
@@ -22,23 +22,25 @@ const Home = ({ page }: { page: any }) => {
       <SEO openGraphType="website" schemaType="home" />
       <Hero />
       <SubNav links={links} />
+      {youTubeUrl && (
+        <Inner paddingHorizontal={true}>
+          <h1>New Video!</h1>
+          <VideoPlayer
+            mediaUrl={youTubeUrl}
+            thumbnailUrl={videoThumbnail?.fields.file.url}
+            spacingTop={true}
+          />
+        </Inner>
+      )}
       {featured &&
         featured.map((item: any, i: number) => {
           const reversed = i % 2 === 0
           return (
-            <Inner paddingHorizontal={true}>
+            <Inner key={i} paddingHorizontal={true}>
               <TwoColumns reverse={reversed} {...item.fields} />
             </Inner>
           )
         })}
-      {youTubeUrl && (
-        <Inner paddingHorizontal={true}>
-          <VideoPlayer
-            mediaUrl={youTubeUrl}
-            thumbnailUrl={heroImage?.fields.file.url}
-          />
-        </Inner>
-      )}
     </>
   )
 }
@@ -48,6 +50,7 @@ export default Home
 export const getServerSideProps = async (params: GetContentModelParams) => {
   const page = await getContentModel({
     ...params,
+    slug: 'home',
   })
   return {
     props: { page },

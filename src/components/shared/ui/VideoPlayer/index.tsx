@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import { LazyFacade } from './LazyFacade'
 
 export type VideoPlayerProps = {
@@ -7,6 +6,7 @@ export type VideoPlayerProps = {
   loading?: 'lazy' | 'eager' | 'auto'
   thumbnailUrl?: string
   thumbnailAlt?: string
+  spacingTop?: boolean
 }
 
 const RATIO_16_9 = 1920 / 1080
@@ -15,9 +15,10 @@ export const VideoPlayer = ({
   mediaUrl,
   thumbnailUrl,
   thumbnailAlt,
+  spacingTop = true,
 }: VideoPlayerProps) => {
   return (
-    <Container ratio={RATIO_16_9}>
+    <Container spacingTop={spacingTop} ratio={RATIO_16_9}>
       <Content>
         <LazyFacade
           mediaUrl={mediaUrl}
@@ -40,8 +41,9 @@ const Content = styled.div<{
   overflow: hidden;
 `
 
-const Container = styled.div<{ ratio: number }>`
+const Container = styled.div<{ ratio: number; spacingTop?: boolean }>`
   display: block;
   padding-top: ${(p) => `${p.ratio ? (1 / p.ratio) * 100 : 0}%`};
   position: relative;
+  margin-top: 3rem;
 `
