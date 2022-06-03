@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components'
 import { dimensions } from '@/styles'
+import { createGlobalStyle } from 'styled-components'
 
 const Typography = createGlobalStyle<{ theme: any }>`
   h1,
@@ -107,7 +107,7 @@ const Typography = createGlobalStyle<{ theme: any }>`
   }
   
   a {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     transition: color 0.08s ease-in-out;
     color: ${({ theme }) => theme.text};
     &:hover {

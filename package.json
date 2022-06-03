@@ -13,6 +13,7 @@
     "lint-all": "next lint --fix --dir src & npm run prettier"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.12.1",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@mdx-js/loader": "^2.1.1",

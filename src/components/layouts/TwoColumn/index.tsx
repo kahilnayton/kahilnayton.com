@@ -1,4 +1,5 @@
 import { ResponsiveImage } from '@/components/shared/ui/Image'
+import { RichText } from '@/components/shared/ui/RichText/RichText'
 import {
   CardImageContainer,
   Column,
@@ -31,6 +32,7 @@ export default function TwoColumns({
   title,
   heroImage,
   description,
+  body,
   ctaLink,
   ctaLabel,
 }: TwoColumnProps) {
@@ -53,7 +55,7 @@ export default function TwoColumns({
               </Column>
               <Column>
                 <h1>{title}</h1>
-                <p>{description}</p>
+                {body && <RichText content={body} />}
                 <VStack spacingTop={2}>
                   <a target="_blank" rel="noreferrer" href={ctaLink}>
                     {ctaLabel}
