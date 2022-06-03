@@ -2,13 +2,15 @@ import TwoColumns from '@/components/layouts/TwoColumn'
 import SubNav from '@/components/sections/SubNav'
 import SEO from '@/components/SEO'
 import Hero from '@/components/shared/ui/Hero'
+import { RichText } from '@/components/shared/ui/RichText/RichText'
 import { VideoPlayer } from '@/components/shared/ui/VideoPlayer'
 import { links } from '@/lib'
 import { Inner } from '@/styles'
 import { getContentModel, GetContentModelParams } from '@/utils/contentful'
 
 const Home = ({ page }: { page: any }) => {
-  const { featured, youTubeUrl, videoThumbnail } = page.fields || {}
+  const { featured, youTubeUrl, videoThumbnail, description, content } =
+    page.fields || {}
 
   // TODO: fix this logic
   // const getAnchorLinks = () => {
@@ -22,6 +24,9 @@ const Home = ({ page }: { page: any }) => {
       <SEO openGraphType="website" schemaType="home" />
       <Hero />
       <SubNav links={links} />
+      <Inner paddingHorizontal={true}>
+        {content && <RichText content={content} />}
+      </Inner>
       {youTubeUrl && (
         <Inner paddingHorizontal={true}>
           <h1>New Video!</h1>
