@@ -16,7 +16,7 @@ export type LinkType = Record<string, string>
 
 export const links: LinkType[] = [
   {
-    label: 'New Music',
+    label: 'Original Music',
     href: 'newmusic',
   },
   {

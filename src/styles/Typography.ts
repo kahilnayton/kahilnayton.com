@@ -110,6 +110,7 @@ const Typography = createGlobalStyle<{ theme: any }>`
     font-size: 1.8rem;
     transition: color 0.08s ease-in-out;
     color: ${({ theme }) => theme.text};
+    font-weight: 500;
     &:hover {
       transition: color 0.08s ease-in-out;
       color: ${({ theme }) => theme.accent};

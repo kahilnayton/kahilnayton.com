@@ -8,7 +8,7 @@ type IconLinkFields = {
 
 export const IconLink = ({ label, location, icon }: IconLinkFields) => {
   return (
-    <StyledIcon href={location}>
+    <StyledIcon target="_blank" rel="noopener noreferrer" href={location}>
       {icon && <img src={icon} alt="link icon" />}
       <p>{label}</p>
     </StyledIcon>
