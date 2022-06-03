@@ -20,11 +20,7 @@ export const links: LinkType[] = [
     href: 'newmusic',
   },
   {
-    label: 'NFT',
-    href: 'nft',
-  },
-  {
-    label: 'Choro',
+    label: 'Choro (Brazilian Music)',
     href: 'choro',
   },
   {
@@ -36,9 +32,8 @@ export const links: LinkType[] = [
     href: 'bandcamp',
   },
   {
-    label: 'About',
-    page: '/about',
-    href: 'about',
+    label: 'NFT',
+    href: 'nft',
   },
 ]
 

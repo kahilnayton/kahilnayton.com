@@ -5,9 +5,6 @@ import {
 } from '@contentful/rich-text-react-renderer'
 import { BLOCKS, Document, INLINES } from '@contentful/rich-text-types'
 
-// Create a bespoke renderOptions object to target BLOCKS.EMBEDDED_ENTRY (linked entries e.g. videoEmbed
-// and BLOCKS.EMBEDDED_ASSET (linked assets e.g. images)
-
 const richTextRenderOptions: Options = {
   renderNode: {
     [BLOCKS.PARAGRAPH]: (node, children) => {
@@ -25,14 +22,14 @@ const richTextRenderOptions: Options = {
     [BLOCKS.HEADING_4]: (node, children) => {
       return <h4>{children}</h4>
     },
-    [BLOCKS.EMBEDDED_ENTRY]: (node, children) => {
-      console.log(node, 'node')
-      if (node.data.target.sys.contentType.sys.id === 'link') {
-        return <pre>{JSON.stringify(children, null, 4)}</pre>
-      }
+    [INLINES.HYPERLINK]: (node, children) => {
+      return (
+        <a target="_blank" rel="noopener noreferrer" href={node.data.uri}>
+          {children}
+        </a>
+      )
     },
     [INLINES.EMBEDDED_ENTRY]: (node, children) => {
-      console.log(node, 'node')
       if (node.data.target.sys.contentType.sys.id === 'link') {
         return (
           <IconLink

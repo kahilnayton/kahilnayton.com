@@ -29,7 +29,7 @@ const Home = ({ page }: { page: any }) => {
       </Inner>
       {youTubeUrl && (
         <Inner paddingHorizontal={true}>
-          <h1>New Video!</h1>
+          <h1 id="video">New Video!</h1>
           <VideoPlayer
             mediaUrl={youTubeUrl}
             thumbnailUrl={videoThumbnail?.fields.file.url}
