@@ -15,6 +15,7 @@ const SEO = (props: Record<string, string>) => {
         property="og:description"
         content={props.description || config.description}
       />
+      <meta property="og:image" content="/images/final-color-square.jpg" />
       <meta property="og:url" content={props.url || config.url} />
       <meta property="og:type" content="website" />
       <meta name="robots" content="index, follow" />
