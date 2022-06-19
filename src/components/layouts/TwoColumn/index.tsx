@@ -1,5 +1,6 @@
 import { ResponsiveImage } from '@/components/shared/ui/Image'
 import { RichText } from '@/components/shared/ui/RichText/RichText'
+import { BAND_CAMP_ID } from '@/pages'
 import {
   CardImageContainer,
   Column,
@@ -9,6 +10,7 @@ import {
   Inner,
   VStack,
 } from '@/styles'
+import styled from 'styled-components'
 // @ts-ignore
 import Fade from 'react-reveal/Fade'
 
@@ -24,6 +26,7 @@ type TwoColumnProps = {
   description?: string
   link?: string
   imageSrc?: string
+  contentId: string
 }
 
 export default function TwoColumns({
@@ -31,11 +34,13 @@ export default function TwoColumns({
   slug,
   title,
   heroImage,
-  description,
   body,
   ctaLink,
   ctaLabel,
+  contentId,
 }: TwoColumnProps) {
+  console.log(slug, 'slug')
+
   return (
     <Fade bottom>
       <Inner id={slug}>
@@ -61,6 +66,12 @@ export default function TwoColumns({
                     {ctaLabel}
                   </a>
                 </VStack>
+                {contentId === BAND_CAMP_ID && (
+                  <IFrame
+                    scrolling="no"
+                    src="https://bandcamp.com/band_follow_button_classic/36737649"
+                  ></IFrame>
+                )}
               </Column>
             </Container>
           </ElevatedBox>
@@ -69,3 +80,9 @@ export default function TwoColumns({
     </Fade>
   )
 }
+
+export const IFrame = styled.iframe`
+  border: 0;
+  width: 100%;
+  height: 50px;
+`

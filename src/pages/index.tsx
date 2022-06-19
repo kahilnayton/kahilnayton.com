@@ -8,6 +8,8 @@ import { links } from '@/lib'
 import { Inner } from '@/styles'
 import { getContentModel, GetContentModelParams } from '@/utils/contentful'
 
+export const BAND_CAMP_ID = 'BEQ3KcaymHcAiFwZDrH9l'
+
 const Home = ({ page }: { page: any }) => {
   const { featured, youTubeUrl, videoThumbnail, description, content } =
     page.fields || {}
@@ -40,9 +42,15 @@ const Home = ({ page }: { page: any }) => {
       {featured &&
         featured.map((item: any, i: number) => {
           const reversed = i % 2 === 0
+          const contentId = item.sys.id
+          console.log(item, 'items')
           return (
             <Inner key={i} paddingHorizontal={true}>
-              <TwoColumns reverse={reversed} {...item.fields} />
+              <TwoColumns
+                contentId={contentId}
+                reverse={reversed}
+                {...item.fields}
+              />
             </Inner>
           )
         })}
