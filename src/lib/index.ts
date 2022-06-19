@@ -2,15 +2,16 @@ export const EXAMPLE_PATH = 'cms-prismic'
 export const SITE_NAME = 'music-portfolio'
 export const SITE_URL = 'https://prismic.io/'
 export const HOME_OG_IMAGE_URL = ''
-export const YOUTUBE_URL = 'https://youtu.be/9EQHdkZib8g'
+export const YOUTUBE_URL =
+  'https://www.youtube.com/channel/UC7482z2qinkX78nEGCVlaJA'
 export const FACEBOOK_URL = 'https://www.facebook.com/kahil.nayton'
 export const TWITTER_URL = 'https://twitter.com/kahilnayton'
 export const INSTAGRAM_URL = 'https://www.instagram.com/kahilnayton/'
 export const NFT_URL = 'https://openzeppelin.com/'
-export const BANDCAMP_URL = 'https://kahilnayton.bandcamp.com/album/bbep'
+export const BANDCAMP_URL = 'https://kahilnayton.bandcamp.com/'
 export const REGIONAL_URL = 'https://www.facebook.com/choronyc/'
 export const SPOTIFY_URL =
-  'https://open.spotify.com/album/0LVM2RH9zHIgVyyrJDSz1H?si=PZ4ua6NdR3mEad0rJo24oQ'
+  'https://open.spotify.com/artist/1QLR3QFp6Qf4rtGmakmPxe?si=55nt7S1sT8-52k850IEBOA'
 
 export type LinkType = Record<string, string>
 

@@ -39,8 +39,6 @@ export default function TwoColumns({
   ctaLabel,
   contentId,
 }: TwoColumnProps) {
-  console.log(slug, 'slug')
-
   return (
     <Fade bottom>
       <Inner id={slug}>

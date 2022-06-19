@@ -43,7 +43,6 @@ const Home = ({ page }: { page: any }) => {
         featured.map((item: any, i: number) => {
           const reversed = i % 2 === 0
           const contentId = item.sys.id
-          console.log(item, 'items')
           return (
             <Inner key={i} paddingHorizontal={true}>
               <TwoColumns
