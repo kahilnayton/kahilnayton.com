@@ -12,7 +12,7 @@ export const BAND_CAMP_ID = 'BEQ3KcaymHcAiFwZDrH9l'
 
 const Home = ({ page }: { page: any }) => {
   const { featured, youTubeUrl, videoThumbnail, description, content } =
-    page.fields || {}
+    page?.fields || {}
 
   // TODO: fix this logic
   // const getAnchorLinks = () => {
