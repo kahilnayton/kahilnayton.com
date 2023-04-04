@@ -32,16 +32,7 @@ const Home = ({ page }: { page: any }) => {
       <Inner paddingHorizontal={true}>
         {content && <RichText content={content} />}
       </Inner>
-      {youTubeUrl && (
-        <Inner paddingHorizontal={true}>
-          <h1 id="video">New Video!</h1>
-          <VideoPlayer
-            mediaUrl={youTubeUrl}
-            thumbnailUrl={videoThumbnail?.fields.file.url}
-            spacingTop={true}
-          />
-        </Inner>
-      )}
+
       {featured &&
         featured.map((item: any, i: number) => {
           const reversed = i % 2 === 0
@@ -56,6 +47,23 @@ const Home = ({ page }: { page: any }) => {
             </Inner>
           )
         })}
+      <Inner paddingHorizontal={true}>
+        <h1 id="video">Video</h1>
+        <VideoPlayer
+          mediaUrl={youTubeUrl}
+          thumbnailUrl={videoThumbnail?.fields.file.url}
+          spacingTop={true}
+        />
+      </Inner>
+      {youTubeUrl && (
+        <Inner paddingHorizontal={true}>
+          <VideoPlayer
+            thumbnailUrl={'/images/tame_me.png'}
+            mediaUrl={'https://www.youtube.com/watch?v=JtHJyWn94VA'}
+            spacingTop={true}
+          />
+        </Inner>
+      )}
     </>
   )
 }
