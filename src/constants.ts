@@ -4,7 +4,7 @@ export const CONTENTFUL_SPACE_CONFIGS = {
   previewAccessToken: process.env.NEXT_PUBLIC_CONTENT_PREVIEW_API_KEY ?? '',
   host: process.env.NEXT_PUBLIC_CONTENTFUL_HOST ?? '',
   previewHost: process.env.NEXT_PUBLIC_CONTENTFUL_PREVIEW_HOST ?? '',
-  environment: process.env.NEXT_PUBLIC_CONTENTFUL_ENV ?? '',
+  environment: process.env.NEXT_PUBLIC_CONTENTFUL_ENV ?? 'master',
 }
 
 export const NEXT_CONFIGS = {

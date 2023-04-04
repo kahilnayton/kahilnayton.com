@@ -6,11 +6,14 @@ import { RichText } from '@/components/shared/ui/RichText/RichText'
 import { VideoPlayer } from '@/components/shared/ui/VideoPlayer'
 import { links } from '@/lib'
 import { Inner } from '@/styles'
-import { getContentModel, GetContentModelParams } from '@/utils/contentful'
+import type { GetContentModelParams } from '@/utils/contentful'
+import { getContentModel } from '@/utils/contentful'
 
 export const BAND_CAMP_ID = 'BEQ3KcaymHcAiFwZDrH9l'
 
 const Home = ({ page }: { page: any }) => {
+  console.log(page)
+
   const { featured, youTubeUrl, videoThumbnail, description, content } =
     page?.fields || {}
 
@@ -29,16 +32,7 @@ const Home = ({ page }: { page: any }) => {
       <Inner paddingHorizontal={true}>
         {content && <RichText content={content} />}
       </Inner>
-      {youTubeUrl && (
-        <Inner paddingHorizontal={true}>
-          <h1 id="video">New Video!</h1>
-          <VideoPlayer
-            mediaUrl={youTubeUrl}
-            thumbnailUrl={videoThumbnail?.fields.file.url}
-            spacingTop={true}
-          />
-        </Inner>
-      )}
+
       {featured &&
         featured.map((item: any, i: number) => {
           const reversed = i % 2 === 0
@@ -53,6 +47,23 @@ const Home = ({ page }: { page: any }) => {
             </Inner>
           )
         })}
+      <Inner paddingHorizontal={true}>
+        <h1 id="video">Video</h1>
+        <VideoPlayer
+          mediaUrl={youTubeUrl}
+          thumbnailUrl={videoThumbnail?.fields.file.url}
+          spacingTop={true}
+        />
+      </Inner>
+      {youTubeUrl && (
+        <Inner paddingHorizontal={true}>
+          <VideoPlayer
+            thumbnailUrl={'/images/tame_me.png'}
+            mediaUrl={'https://www.youtube.com/watch?v=JtHJyWn94VA'}
+            spacingTop={true}
+          />
+        </Inner>
+      )}
     </>
   )
 }
