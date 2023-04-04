@@ -6,11 +6,15 @@ import { RichText } from '@/components/shared/ui/RichText/RichText'
 import { VideoPlayer } from '@/components/shared/ui/VideoPlayer'
 import { links } from '@/lib'
 import { Inner } from '@/styles'
-import { getContentModel, GetContentModelParams } from '@/utils/contentful'
+import type { GetContentModelParams } from '@/utils/contentful'
+import { getContentModel } from '@/utils/contentful'
+import { createClient } from 'contentful'
 
 export const BAND_CAMP_ID = 'BEQ3KcaymHcAiFwZDrH9l'
 
 const Home = ({ page }: { page: any }) => {
+  console.log(page, 'page')
+
   const { featured, youTubeUrl, videoThumbnail, description, content } =
     page?.fields || {}
 
@@ -59,12 +63,21 @@ const Home = ({ page }: { page: any }) => {
 
 export default Home
 
-export const getServerSideProps = async (params: GetContentModelParams) => {
-  const page = await getContentModel({
-    ...params,
-    slug: 'home',
+export async function getStaticProps() {
+  const client = createClient({
+    space: process.env.NEXT_CONTENTFUL_SPACE_ID,
+    accessToken: process.env.NEXT_CONTENTFUL_ACCESS_TOKEN,
   })
+
+  const res = await client.getEntries({
+    content_type: 'page',
+    include: 10,
+    'fields.slug': 'home',
+  })
+
   return {
-    props: { page },
+    props: {
+      page: res.items[0],
+    },
   }
 }
