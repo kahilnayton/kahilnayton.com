@@ -8,12 +8,11 @@ import { links } from '@/lib'
 import { Inner } from '@/styles'
 import type { GetContentModelParams } from '@/utils/contentful'
 import { getContentModel } from '@/utils/contentful'
-import { createClient } from 'contentful'
 
 export const BAND_CAMP_ID = 'BEQ3KcaymHcAiFwZDrH9l'
 
 const Home = ({ page }: { page: any }) => {
-  console.log(page, 'page')
+  console.log(page)
 
   const { featured, youTubeUrl, videoThumbnail, description, content } =
     page?.fields || {}
@@ -63,21 +62,12 @@ const Home = ({ page }: { page: any }) => {
 
 export default Home
 
-export async function getStaticProps() {
-  const client = createClient({
-    space: process.env.NEXT_CONTENTFUL_SPACE_ID,
-    accessToken: process.env.NEXT_CONTENTFUL_ACCESS_TOKEN,
+export const getServerSideProps = async (params: GetContentModelParams) => {
+  const page = await getContentModel({
+    ...params,
+    slug: 'home',
   })
-
-  const res = await client.getEntries({
-    content_type: 'page',
-    include: 10,
-    'fields.slug': 'home',
-  })
-
   return {
-    props: {
-      page: res.items[0],
-    },
+    props: { page },
   }
 }

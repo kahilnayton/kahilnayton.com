@@ -12,7 +12,7 @@ const defaultClient = createClient({
 
 const previewClient = createClient({
   space: CONTENTFUL_SPACE_CONFIGS.spaceId,
-  accessToken: CONTENTFUL_SPACE_CONFIGS.previewAccessToken,
+  accessToken: CONTENTFUL_SPACE_CONFIGS.accessToken,
   host: CONTENTFUL_SPACE_CONFIGS.previewHost,
   environment: CONTENTFUL_SPACE_CONFIGS.environment,
 })
@@ -74,6 +74,8 @@ export const getContentModels = async <T>({
 
     return null
   } catch (e) {
+    console.log('Error fetching contentful data', e)
+
     return null
   }
 }
