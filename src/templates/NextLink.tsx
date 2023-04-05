@@ -13,7 +13,7 @@ export const NextLink: LinkComponent = ({ children, href }) => {
 
   return (
     <Link href={href || fallbackHref} passHref>
-      <a>{children}</a>
+      {children}
     </Link>
   )
 }

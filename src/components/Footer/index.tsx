@@ -88,9 +88,7 @@ export default function Footer({ toggleTheme, theme, links }: FooterProps) {
           </FormGroup>
         </VStack>
         <Link href="/">
-          <a>
-            <Image width={70} height={70} src="/images/SVG/logo.svg" alt="" />
-          </a>
+          <Image width={70} height={70} src="/images/SVG/logo.svg" alt="" />
         </Link>
       </FooterContainer>
     </Inner>
