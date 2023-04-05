@@ -12,8 +12,6 @@ import { getContentModel } from '@/utils/contentful'
 export const BAND_CAMP_ID = 'BEQ3KcaymHcAiFwZDrH9l'
 
 const Home = ({ page }: { page: any }) => {
-  console.log(page)
-
   const { featured, youTubeUrl, videoThumbnail, description, content } =
     page?.fields || {}
 
