@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.12.1",
-    "@emotion/react": "^11.7.1",
+    "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.6.0",
     "@mui/material": "^5.11.16",
     "@mui/styled-engine-sc": "^5.11.11",
@@ -26,9 +26,9 @@
     "contentful": "^9.1.29",
     "next": "latest",
     "react": "latest",
+    "react-awesome-reveal": "^4.2.3",
     "react-dom": "latest",
     "react-icons": "^3.10.0",
-    "react-reveal": "^1.2.2",
     "styled-components": "^5.3.9"
   },
   "devDependencies": {

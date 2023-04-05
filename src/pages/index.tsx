@@ -45,23 +45,23 @@ const Home = ({ page }: { page: any }) => {
             </Inner>
           )
         })}
-      <Inner paddingHorizontal={true}>
-        <h1 id="video">Video</h1>
-        <VideoPlayer
-          mediaUrl={youTubeUrl}
-          thumbnailUrl={videoThumbnail?.fields.file.url}
-          spacingTop={true}
-        />
-      </Inner>
       {youTubeUrl && (
         <Inner paddingHorizontal={true}>
+          <h1 id="video">Video</h1>
           <VideoPlayer
-            thumbnailUrl={'/images/tame_me.png'}
-            mediaUrl={'https://www.youtube.com/watch?v=JtHJyWn94VA'}
+            mediaUrl={youTubeUrl}
+            thumbnailUrl={videoThumbnail?.fields.file.url}
             spacingTop={true}
           />
         </Inner>
       )}
+      {/* <Inner paddingHorizontal={true}>
+        <VideoPlayer
+          thumbnailUrl={'/images/tame_me.png'}
+          mediaUrl={'https://www.youtube.com/watch?v=JtHJyWn94VA'}
+          spacingTop={true}
+        />
+      </Inner> */}
     </>
   )
 }

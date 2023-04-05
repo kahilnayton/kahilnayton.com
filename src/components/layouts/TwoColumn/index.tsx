@@ -11,8 +11,7 @@ import {
   VStack,
 } from '@/styles'
 import styled from 'styled-components'
-// @ts-ignore
-import Fade from 'react-reveal/Fade'
+import { Fade } from 'react-awesome-reveal'
 
 type TwoColumnProps = {
   reverse?: boolean
@@ -40,7 +39,7 @@ export default function TwoColumns({
   contentId,
 }: TwoColumnProps) {
   return (
-    <Fade bottom>
+    <Fade>
       <Inner id={slug}>
         <ElevationWrapper>
           <ElevatedBox>
