@@ -3,7 +3,7 @@ NODE_VERSION = "16"
 NPM_FLAGS = "--version"
 
 [[plugins]]
-package = "/.netlify/netlify-plugin-yarn"
+package = "/plugins/netlify-plugin-yarn"
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
