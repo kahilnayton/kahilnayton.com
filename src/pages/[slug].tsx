@@ -2,7 +2,8 @@ import SubNav from '@/components/sections/SubNav'
 import SEO from '@/components/SEO'
 import Hero from '@/components/shared/ui/Hero'
 import { links } from '@/lib'
-import { getContentModel, GetContentModelParams } from '@/utils/contentful'
+import type { GetContentModelParams } from '@/utils/contentful'
+import { getContentModel } from '@/utils/contentful'
 import ErrorPage from 'next/error'
 
 const About = ({ page }: { page: any }) => {

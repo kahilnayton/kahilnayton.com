@@ -5,13 +5,7 @@ import styled from 'styled-components'
 const Hero = () => {
   return (
     <HeroContainer>
-      <Image
-        layout="fill"
-        objectFit="cover"
-        objectPosition="top"
-        src="/images/final-color-02-layers.jpg"
-        alt="hero"
-      />
+      <Image fill src="/images/final-color-02-layers.jpg" alt="hero" />
     </HeroContainer>
   )
 }
@@ -22,6 +16,13 @@ const HeroContainer = styled.div`
   padding-top: ${headerHeightMobile};
   height: 500px;
   position: relative;
+  object-fit: contain;
+  overflow: hidden;
+  justify-self: center;
+  display: flex;
+
+  img {
+  }
 
   @media (min-width: ${dimensions.tablet}px) {
     height: 700px;
