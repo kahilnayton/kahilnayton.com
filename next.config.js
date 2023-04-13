@@ -4,7 +4,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 const nextConfig = {
   reactStrictMode: true,
-  target: process.env.NEXT_PRIVATE_TARGET || 'server',
   eslint: {
     // Warning: This allows production builds to successfully complete even if
     // your project has ESLint errors.

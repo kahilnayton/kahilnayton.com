@@ -1752,6 +1752,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bezier-easing@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "bezier-easing@npm:2.1.0"
+  checksum: ec22666b5385979b3e7a63eaf2631395b1be5beb3aed4f14cc70ae9eb09032082584f7e3eec045e4c122466987ed7e159f5b39f82b8a9870cd55e75b0d55a7d5
+  languageName: node
+  linkType: hard
+
 "binary-extensions@npm:^2.0.0":
   version: 2.2.0
   resolution: "binary-extensions@npm:2.2.0"
@@ -4079,6 +4086,7 @@ __metadata:
     react-awesome-reveal: ^4.2.3
     react-dom: latest
     react-icons: ^3.10.0
+    react-scroll-parallax: ^3.4.2
     styled-components: ^5.3.9
     typescript: 4.3.5
   languageName: unknown
@@ -4910,6 +4918,15 @@ next@latest:
   languageName: node
   linkType: hard
 
+"parallax-controller@npm:^1.7.0":
+  version: 1.7.0
+  resolution: "parallax-controller@npm:1.7.0"
+  dependencies:
+    bezier-easing: ^2.1.0
+  checksum: cc44deaa569e14e37445d6c00fe4d4bd86382a3db8d2b0f96cb5ad6e634d8e8ac0e383694bfb689e85cc186066201dd29ece8be466add155b17b1296b289ee84
+  languageName: node
+  linkType: hard
+
 "parent-module@npm:^1.0.0":
   version: 1.0.1
   resolution: "parent-module@npm:1.0.1"
@@ -5195,6 +5212,18 @@ next@latest:
   version: 18.2.0
   resolution: "react-is@npm:18.2.0"
   checksum: e72d0ba81b5922759e4aff17e0252bd29988f9642ed817f56b25a3e217e13eea8a7f2322af99a06edb779da12d5d636e9fda473d620df9a3da0df2a74141d53e
+  languageName: node
+  linkType: hard
+
+"react-scroll-parallax@npm:^3.4.2":
+  version: 3.4.2
+  resolution: "react-scroll-parallax@npm:3.4.2"
+  dependencies:
+    parallax-controller: ^1.7.0
+  peerDependencies:
+    react: ^16.8.0-0 || >=17.0.1 || ^18.0.0
+    react-dom: ^16.8.0-0 || >=17.0.1 || ^18.0.0
+  checksum: c59514be1ae566a6b48218f854b5b6d8eb0bb90d31732f6bd27d05dec131421ec55b750f5cff3f38c4395623607ceb7dfb12b807a3791e636554c70f29a2eadd
   languageName: node
   linkType: hard
 
